@@ -535,5 +535,5 @@ NAN_MODULE_INIT(init)
     PosixMQ::Initialize(target);
 }
 
-NODE_MODULE(posixmq, init)
+NAN_MODULE_WORKER_ENABLED(posixmq, init)
 }
